@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Background Color Toggle",
+    "version": "1.0",
+    "description": "Toggles the background color of webpages.",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
